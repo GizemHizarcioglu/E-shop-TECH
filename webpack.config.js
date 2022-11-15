@@ -37,6 +37,55 @@ module.exports = {
       template: "./src/views/about.html",  //input
     }),
 
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "Kayit Sayfasi",
+      filename: "register.html", //output
+      template: "./src/views/register.html",  //input
+    }),
+
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "Giris Sayfasi",
+      filename: "login.html", //output
+      template: "./src/views/login.html",  //input
+    }),
+
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "Odeme Sayfasi",
+      filename: "checkout.html", //output
+      template: "./src/views/checkout.html",  //input
+    }),
+
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "Odeme Sayfasi",
+      filename: "contact.html", //output
+      template: "./src/views/contact.html",  //input
+    }),
+
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "Odeme Basarili",
+      filename: "success.html", //output
+      template: "./src/views/success.html",  //input
+    }),
+
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "One Cikan Urunler",
+      filename: "products.html", //output
+      template: "./src/views/products.html",  //input
+    }),
+
+    new HtmlWebpackPlugin({
+      inject: "body",
+      title: "Siparisler",
+      filename: "orders.html", //output
+      template: "./src/views/orders.html",  //input
+    }),
+
     // [].concat(
     //   pages.map(
     //     (page) =>

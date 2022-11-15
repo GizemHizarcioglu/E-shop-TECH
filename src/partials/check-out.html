@@ -1,0 +1,111 @@
+<div class="col-md-7 col-lg-8 mx-auto pt-5 bg-light">
+    <h2 class="text-center pb-5 text-secondary">Ödeme Sayfası</h2>
+    <h4 class="mb-3">Fatura Adresi</h4>
+    <form class="needs-validation">
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">İsim</label>
+          <input type="text" class="form-control" id="firstName" required="">
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Soyad</label>
+          <input type="text" class="form-control" id="lastName" required="">
+        </div>
+
+        <div class="col-12">
+          <label for="email" class="form-label">E-posta</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label">Adres</label>
+          <input type="text" class="form-control" id="address" required="">
+        </div>
+
+        <div class="col-md-5">
+          <label for="city" class="form-label">Şehir</label>
+          <select class="form-select" id="city" required="">
+            <option value="">Şehir seçiniz</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
+            <option>İzmir</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="county" class="form-label">İlçe</label>
+          <select class="form-select" id="county" required="">
+            <option value="">İlçe seçiniz</option>
+            <option>Arnavutköy</option>
+            <option>Bakırköy</option>
+            <option>Esenler</option>
+            <option>Fatih</option>
+            <option>Çankaya</option>
+            <option>Etimesgut</option>
+            <option>Keçiören</option>
+            <option>Yenimahalle</option>
+            <option>Bornova</option>
+            <option>Karşıyaka</option>
+            <option>Narlıdere</option>
+            <option>Menemen</option>
+          </select>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="same-address">
+        <label class="form-check-label" for="same-address">Fatura adresim teslimat adresimle aynı olsun</label>
+      </div>
+
+
+      <hr class="my-4">
+
+      <h4 class="mb-3">Ödeme</h4>
+
+      <div class="my-3">
+        <div class="form-check">
+          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="credit">Kredi Kartı</label>
+        </div>
+        <div class="form-check">
+          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="debit">Banka Kartı</label>
+        </div>
+        <div class="form-check">
+          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+      </div>
+
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <label for="cc-name" class="form-label">Kart üzerindeki isim</label>
+          <input type="text" class="form-control" id="cc-name" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="cc-number" class="form-label">Kart numarası</label>
+          <input type="text" class="form-control" id="cc-number" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="cc-expiration" class="form-label">Son kullanma tarihi</label>
+          <input type="text" class="form-control" id="cc-expiration" placeholder="GG/YY" required>
+        </div>
+
+        <div class="col-md-3">
+          <label for="cc-cvv" class="form-label">CVV</label>
+          <input type="text" class="form-control" id="cc-cvv" required>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+      <a class="w-25 btn btn-secondary btn-lg mt-5" href="success.html" role="button"
+      >Ödemeyi tamamla</a>
+      </div>
+      </div>
+    </form>
+  </div>
